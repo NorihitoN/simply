@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # add bootstrap-saas
 gem 'bootstrap-sass'
 
+# add hash 
+gem 'bcrypt'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
