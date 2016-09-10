@@ -1,3 +1,19 @@
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
 <div class="center jumbotron">
 <h1>Simply</h1>
 <h2>Simplyは、楽しく、賢く、そしてシンプルにお金を貯めて、人生の目標を達成するためのウェブサービスです。
@@ -10,3 +26,5 @@ Simplyの使い方については、<a href="https://simply-norihito26.c9users.i
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"),
             'https://ide.c9.io/norihito26/' %>
+            
+<% end %>
